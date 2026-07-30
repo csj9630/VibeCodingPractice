@@ -1,0 +1,90 @@
+# ==========================================
+# 1. Environment & Secret Keys (보안 필수!)
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.env
+*.pem
+*.key
+secrets.json
+
+# ==========================================
+# 2. Logs
+# ==========================================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
+# 3. Node.js & React (Frontend)
+# ==========================================
+node_modules
+dist
+dist-ssr
+build
+*.local
+
+# ==========================================
+# 4. Python & FastAPI (Backend)
+# ==========================================
+# Virtual Environment (가상환경)
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local Database (SQLite 등)
+*.db
+*.sqlite3
+*.sqlite
+
+# ==========================================
+# 5. LLM & Data & Uploads (로컬 테스트 데이터)
+# ==========================================
+uploads/
+temp/
+.cache/
+huggingface/
+*.csv
+*.jsonl
+
+# ==========================================
+# 6. Editor Directories & Files
+# ==========================================
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==========================================
+# 7. OS Generated Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
