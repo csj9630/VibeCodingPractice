@@ -29,21 +29,23 @@ test_project/
 새로운 PC 환경에서 이 프로젝트를 GitHub에서 Clone 받아 처음 실행할 때의 가이드입니다.
 
 ### 1. 프로젝트 복제 (Clone)
+
 ```bash
 git clone https://github.com/csj9630/VibeCodingPractice.git
 cd VibeCodingPractice
 ```
 
 ### 2. 백엔드 (FastAPI) 환경설정 및 구동
+
 ```bash
 # 백엔드 폴더로 이동
 cd backend
 
-# 파이썬 가상환경 생성 (최초 1회)
-python -m venv venv
+# 파이썬 3.12 가상환경 생성 (최초 1회)
+py -3.12 -m venv .venv
 
 # 가상환경 활성화 (Windows 기준)
-.\venv\Scripts\Activate.ps1   # PowerShell
+.venv\Scripts\Activate.ps1   # PowerShell
 # 또는 .\venv\Scripts\activate.bat (CMD)
 
 # 필요 패키지 재설치
@@ -54,6 +56,7 @@ uvicorn app.main:app --reload
 ```
 
 ### 3. 프론트엔드 (React / Vite) 환경설정 및 구동
+
 ```bash
 # 프론트엔드 폴더로 이동
 cd frontend
@@ -70,13 +73,16 @@ npm run dev
 ## 🚀 기존 로컬 실행 방법 안내
 
 ### 1. 백엔드 (FastAPI) 구동
+
 ```bash
 cd backend
 uvicorn app.main:app --reload
 ```
+
 > **FastAPI API 문서 확인**: 브라우저에서 [http://localhost:8000/docs](http://localhost:8000/docs) 접속
 
 ### 2. 프론트엔드 (React / Vite) 구동
+
 ```bash
 cd frontend
 npm run dev
